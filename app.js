@@ -122,6 +122,6 @@ app.post("/delete", function(req, res){
 
 });
 
-app.listen(3000, function() {
-  console.log("Server started port 3000");  
+app.listen(process.env.PORT || 3000, function() {
+  console.log("Server is running on port 3000");
 });
